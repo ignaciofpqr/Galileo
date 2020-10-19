@@ -1,0 +1,22 @@
+#FooterButtons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    margin-left: 0px;
+    background-color: #11393d;
+}
+
+a:link {
+   color: white;
+   font-family: "Roboto";
+}
+
+a:hover {
+    color: orange;
+    font-family: "Roboto";
+}
+
+a:visited {
+    color: white;
+}

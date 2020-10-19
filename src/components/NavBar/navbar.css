@@ -1,0 +1,38 @@
+#NAV {
+
+}
+
+.LogoConteiner{
+    padding-left: 100px;
+}
+
+#NavBarButtons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    margin-left: 0px;
+    background-color:white;
+}
+
+#indexHomeButton{
+    margin-left: 600px;
+    color: #97979b
+}
+#indexAboutButton{
+    color: #97979b
+
+}
+#indexBlogButton{
+    color: #97979b
+
+}
+#indexContactButton{
+    color: #97979b
+
+}
+
+#indexLogo {
+    image: url(https://i.ibb.co/T19W4xk/Mesa-de-trabajo-3-copia-2.png);
+
+}

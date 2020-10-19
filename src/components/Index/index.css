@@ -1,0 +1,39 @@
+.background {
+    background-image: url(https://i.ibb.co/tKGcSVs/NACHO-Mesa-de-trabajo-1.png);
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+#textBox {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20vh;
+    padding-left: 10vh;
+    padding-bottom: 20vh;
+    font-family: "Roboto";
+    font-size: 40px;
+}
+
+#titleIndex {
+    margin-bottom: 2vh;
+    font-size: 40px;
+    font-family: 'Roboto';
+}
+
+#introIndex {
+    padding-bottom: 1vh;
+    font-size: 80px;
+}
+
+#buttonIndex{
+
+} 
+

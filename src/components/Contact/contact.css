@@ -1,0 +1,52 @@
+.backgroundContact {
+    background-image: url(https://i.ibb.co/tKGcSVs/NACHO-Mesa-de-trabajo-1.png);
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+}
+
+#textBoxContact {
+    margin-top: 40px;
+    padding-left: 10vh;
+    font-family: "Roboto";
+    font-size: 20px;
+    width: 90vh;
+}
+
+.formsContact{
+    display: flexbox;
+    margin-top: 0px;
+}
+
+#titleContact {
+    margin-bottom: 1vh;
+    font-size: 30px;
+    font-family: 'Roboto';
+}
+
+#introContact {
+    margin-bottom: 7vh;
+    font-size: 20px;
+}
+
+#buttonSubmit {
+    margin-top: 3vh;
+    margin-bottom: 17vh;
+}
+
+#nname{
+    width: 250px;
+    height: ;
+}
+#ename{
+    width: 60px;
+}
+#mname{
+    width: 60px;
+}
+#emailHelp{
+    padding-bottom: ;
+}

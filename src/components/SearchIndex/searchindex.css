@@ -1,0 +1,29 @@
+.backgroundsearchindex {
+    background-image: url(https://i.ibb.co/TtJGtv2/fondo-2-Mesa-de-trabajo-1-copia-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+#titleindexsearchcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    padding-left: 10vh;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+#titleindexsearch {
+    margin-bottom: 35vh;
+    margin-left: 25vh;
+    font-size: 25px;
+    font-family: 'Roboto';
+}
