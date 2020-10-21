@@ -16,25 +16,64 @@ function App() {
   const [search, setSearchApp] = useState({
     array: [],
     word: "",
+    filtered: [],
   });
 
   // Products state
   const [products, setProducts] = useState('');
 
+  const [order, setOrder] = useState({
+    size: "",
+    sort: "",
+  });      
+
   useEffect(() => {
     console.log(search)
-      }, [search])
+    console.log(order)
+      }, [search, order])
 
-  
-  // Pagination states
-  // const [loading, setLoading] = useState(false);
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const [postsPerPage, setPostsPerPage] = useState(10);
+      
+//Clona un array 
+  const clone = matriz => matriz.map(i => (Array.isArray(i) ? clone(i) : i));
 
 
-  // const indexOfLastPost = currentPage * postsPerPage;
-  // const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  // const  currentProds = (search.array).slice(indexOfFirstPost, indexOfLastPost);
+  // Function to order by
+  const sortProducts = (sort) => {
+    setSearchApp({
+      ...search,
+      filtered: search.array.sort((a,b) => 
+      sort === "lower"
+        ? a.price > b.price 
+        ? 1 
+        : -1
+      : sort === "higher"
+        ? a.price < b.price
+        ? 1 
+        : -1
+      : a.id < b.id
+        ? 1 
+        : -1
+    )})
+  };
+ 
+
+  // Function to filter by condition
+ const filterProducts = (size) => {
+    console.log("Condition >", search.array[0].condition)
+    console.log(size)
+   if (size === "All"){
+     setSearchApp({
+       ...search,
+       filtered: clone(search.array)
+     })
+   } else {
+     setSearchApp({
+    ...search,
+    filtered: search.array.filter(product => product.condition.toLowerCase() === size.toLowerCase())
+    })
+  }
+  console.log(order)
+};
 
   return (
     <div className = 'app'>
@@ -55,7 +94,7 @@ function App() {
           <Contact/>
           </Route>
           <Route exact path='/catalogo'>
-          <Catalogo {...{search, setSearchApp}}/>
+          <Catalogo {...{setSearchApp, search, setOrder, order, sortProducts, filterProducts}}/>
           </Route>
           {/* <Footer/> */}
       </Router>

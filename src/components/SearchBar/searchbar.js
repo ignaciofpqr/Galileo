@@ -29,6 +29,7 @@ const SearchBar = ({setSearchApp, search}) => {
             setSearchApp({
                 array: res.data,
                 word: search.word,
+                filtered: res.data
                 });
         })
     }

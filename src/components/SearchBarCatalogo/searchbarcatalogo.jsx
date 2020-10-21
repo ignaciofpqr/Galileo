@@ -6,8 +6,6 @@ import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
 import './searchbarcatalogo.css'
 
 const SearchBarCatalogo = ({setSearchApp, search}) => {
-    console.log(setSearchApp)
-    console.log(search)
 
 function handleChange(e){
     setSearchApp({
@@ -17,17 +15,15 @@ function handleChange(e){
 }
 
 async function handleSubmit(e){
-    console.log('Estoy en el HOS')
     if(!search){
         return alert ("Write a product name!")
     };
     await axios.get (`http://localhost:4000/api/search?query=${search.word}`) 
     .then ((res) => {
-        console.log(res)
-        console.log(res.data)
         setSearchApp({
             array: res.data,
             word: search.word,
+            filtered: res.data
             });
     })
 }
