@@ -1,7 +1,6 @@
 import React from 'react';
 import './contact.css';
 import "fontsource-roboto/500.css" // All styles included.
-import {Link} from 'react-router-dom';
 
 const contact = () => {
 

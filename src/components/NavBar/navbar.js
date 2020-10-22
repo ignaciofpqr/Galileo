@@ -1,6 +1,5 @@
-import React, {Fragment, useState} from "react";
-import {Avatar, Button, MenuItem, Menu, Badge} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+import React from "react";
+import {Button} from '@material-ui/core';
 import './navbar.css';
 import {Link} from 'react-router-dom';
 

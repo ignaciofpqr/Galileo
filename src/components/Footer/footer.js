@@ -1,6 +1,4 @@
 import React, {Fragment, useState} from "react";
-import {Avatar, Button, MenuItem, Menu, Badge} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
 import './footer.css';
 
 const Footer = () => {

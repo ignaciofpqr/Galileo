@@ -8,7 +8,6 @@ import SearchIndex from './components/SearchIndex/searchindex.js';
 import Nav from './components/NavBar/navbar';
 import "fontsource-roboto"
 import Catalogo from './components/Catalogo/catalogo';
-// import Footer from './components/Footer/footer';
 
 function App() {
   

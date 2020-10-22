@@ -10,6 +10,4 @@ router.get('/search', async (req, res) => {
 	})
 })
 
-// router.get('/page')
-
 module.exports = router
