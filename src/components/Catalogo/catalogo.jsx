@@ -12,7 +12,7 @@ const catalogo = ({setSearchApp, search, setOrder, order, sortProducts, filterPr
     <div className='catalogo-body'>
       <SearchBarCatalogo {...{search, setSearchApp}}/>
       <Filter {...{search, setOrder, order, sortProducts, filterProducts}}/>
-      <Cards {...{search}}/>
+      <Cards {...{search, setSearchApp}}/>
     </div>
     )
 };

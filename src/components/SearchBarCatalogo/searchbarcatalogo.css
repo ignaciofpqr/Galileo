@@ -9,19 +9,19 @@ body {
     position: relative;
     display: flexbox;
     justify-content: center;
-    margin-left: 70vh;
+    margin-left: 77vh;
     width: 400px;
     height: 60px;
     border-radius: 40px;
     padding: 10px;
    }
    
-   .buscar-caja-catalogo:hover > .buscar-txt-catalogo {
+   .buscar-caja-catalogo > .buscar-txt-catalogo {
     width: 240px;
     padding: 0 6px;
    }
    
-   .buscar-caja-catalogo:hover > .buscar-btn-catalogo {
+   .buscar-caja-catalogo > .buscar-btn-catalogo {
     background: white;
     color: black;
    }
@@ -52,11 +52,11 @@ body {
     float: left;
     padding: 0;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     transition: 0.4s;
     line-height: 40px;
     width: 0px;
-    font-weight: bold;
+    font-weight: lighter;
    }
 
    .btn2 {

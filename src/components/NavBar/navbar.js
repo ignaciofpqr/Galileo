@@ -28,7 +28,7 @@ const Nav = () => {
                     </Link>
                 </div>
                 <div>
-                     <Button id="indexBlogButton" aria-controls="simple-menu" aria-haspopup="true" href="https://www.blogger.com">
+                     <Button id="indexBlogButton" aria-controls="simple-menu" aria-haspopup="true" href="https://www.blogger.com" target="_blank">
                           BLOG
                      </Button>
                 </div>

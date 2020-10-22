@@ -12,7 +12,7 @@ const productCard = ({img, name, price, condition, stock, currency}) => {
                 <img src={img} className='PCimage'/>
                 </div>
                 <div className = 'PCDataWrapper'>
-                    <a>${price}</a> <a>({currency})</a><br/>
+                    <a id="price">${price}</a> <a>({currency})</a><br/>
                     <a>{name}</a> <br/>
                     <a>Condition: {condition}</a><br/>
                     <a>Stock: {stock}</a>

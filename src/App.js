@@ -17,11 +17,9 @@ function App() {
     array: [],
     word: "",
     filtered: [],
-  });
+    });
 
-  // Products state
-  const [products, setProducts] = useState('');
-
+  // Filters state
   const [order, setOrder] = useState({
     size: "",
     sort: "",
@@ -33,7 +31,7 @@ function App() {
       }, [search, order])
 
       
-//Clona un array 
+  //Clone an array 
   const clone = matriz => matriz.map(i => (Array.isArray(i) ? clone(i) : i));
 
 
@@ -58,7 +56,7 @@ function App() {
  
 
   // Function to filter by condition
- const filterProducts = (size) => {
+  const filterProducts = (size) => {
     console.log("Condition >", search.array[0].condition)
     console.log(size)
    if (size === "All"){
@@ -74,6 +72,9 @@ function App() {
   }
   console.log(order)
 };
+
+
+
 
   return (
     <div className = 'app'>
