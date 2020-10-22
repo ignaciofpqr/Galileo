@@ -40,16 +40,10 @@ function App() {
       ...search,
       filtered: search.array.sort((a,b) => 
       sort === "lower"
-        ? a.price > b.price 
-        ? 1 
-        : -1
+        ? a.price > b.price ? 1 : -1
       : sort === "higher"
-        ? a.price < b.price
-        ? 1 
-        : -1
-      : a.id < b.id
-        ? 1 
-        : -1
+        ? a.price < b.price ? 1 : -1
+      : a.id < b.id ? 1  : -1
     )})
   };
  

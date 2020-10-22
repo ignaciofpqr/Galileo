@@ -19,7 +19,7 @@ const Filter = ({search, order, setOrder, sortProducts, filterProducts}) => {
             <div className="filter">
                 <div className="filter-result">We've found: {search.array.length} results</div>
                 <div className="filter-sort">
-                    Order {"  "}
+                    Order by price {"  "}
                     <select name="sort" value={order.sort} onChange={ changeOrder }>
                         <option>Latest</option>
                         <option value="lower"> Low to high </option>
@@ -27,7 +27,7 @@ const Filter = ({search, order, setOrder, sortProducts, filterProducts}) => {
                     </select>
                 </div>
                 <div className="filter-size">
-                    Filter {"  "}
+                    Filter by condition {"  "}
                     <select name="size" value={order.size} onChange={  changeOrder }>
                         <option value="All">All</option>
                         <option value="New">New</option>
