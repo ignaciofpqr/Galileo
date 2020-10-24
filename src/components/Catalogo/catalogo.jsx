@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Cards from '../Cards/cards.jsx';
 import Filter from '../Filter/filter.js';
 import SearchBarCatalogo from '../SearchBarCatalogo/searchbarcatalogo.jsx';

@@ -19,10 +19,8 @@ const Cards = ({search, setSearchApp}) => {
 
         const fetchData = async () => {
             const {data} = await Axios.get(`http://localhost:4000/api/search?query=${search.word}}`)
-            console.log("esta es la data:", data)
             let counter = Math.ceil(data.length/20)
             setCount(counter)
-            console.log('counter',counter)
             setProductscatalogo(data.rows)
         }
         fetchData()

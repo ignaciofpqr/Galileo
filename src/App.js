@@ -25,8 +25,6 @@ function App() {
   });      
 
   useEffect(() => {
-    console.log(search)
-    console.log(order)
       }, [search, order])
 
       
