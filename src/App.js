@@ -18,14 +18,14 @@ function App() {
     filtered: [],
     });
 
+
   // Filters state
   const [order, setOrder] = useState({
     size: "",
     sort: "",
   });      
 
-  useEffect(() => {
-      }, [search, order])
+  useEffect(() => {}, [search, order])
 
       
   //Clone an array 
@@ -48,8 +48,6 @@ function App() {
 
   // Function to filter by condition
   const filterProducts = (size) => {
-    console.log("Condition >", search.array[0].condition)
-    console.log(size)
    if (size === "All"){
      setSearchApp({
        ...search,
@@ -61,7 +59,6 @@ function App() {
     filtered: search.array.filter(product => product.condition.toLowerCase() === size.toLowerCase())
     })
   }
-  console.log(order)
 };
 
 
@@ -88,7 +85,6 @@ function App() {
           <Route exact path='/catalogo'>
           <Catalogo {...{setSearchApp, search, setOrder, order, sortProducts, filterProducts}}/>
           </Route>
-          {/* <Footer/> */}
       </Router>
     </div>
   );

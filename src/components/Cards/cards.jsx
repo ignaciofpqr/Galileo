@@ -7,7 +7,6 @@ import './cards.css';
 
 const Cards = ({search, setSearchApp}) => {
 
-    const [productscatalogo, setProductscatalogo] = useState();
     const [page,setPage] = useState(1)
     const [count,setCount] = useState()
 
@@ -21,7 +20,6 @@ const Cards = ({search, setSearchApp}) => {
             const {data} = await Axios.get(`http://localhost:4000/api/search?query=${search.word}}`)
             let counter = Math.ceil(data.length/20)
             setCount(counter)
-            setProductscatalogo(data.rows)
         }
         fetchData()
     }, [search, page])
