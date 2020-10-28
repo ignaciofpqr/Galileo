@@ -26,12 +26,26 @@
     margin-bottom: 2vh;
     font-size: 40px;
     font-family: 'Roboto';
+    animation: slide 0.5s ease;
 }
 
 #introIndex {
     padding-bottom: 1vh;
     font-size: 60px;
+    animation: slide 1.5s ease;
 }
 #buttonIndex{
     border-radius: 30px;
+    animation: slide 2.0s ease;
   }
+
+  @keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
