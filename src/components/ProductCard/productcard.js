@@ -12,10 +12,10 @@ const productCard = ({img, name, price, condition, stock, currency}) => {
                 <img src={img} alt="Product" className='PCimage'/>
                 </div>
                 <div className = 'PCDataWrapper'>
-                    <a id="price">${price}</a> <a>({currency})</a><br/>
-                    <a>{name}</a> <br/>
-                    <a>Condition: {condition}</a><br/>
-                    <a>Stock: {stock}</a>
+                    <div id="price">${price}</div> <div>({currency})</div><br/>
+                    <div>{name}</div> <br/>
+                    <div>Condition: {condition}</div><br/>
+                    <div>Stock: {stock}</div>
                 </div>
             </div>
         </div>

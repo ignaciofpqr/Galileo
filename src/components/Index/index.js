@@ -7,8 +7,8 @@ import {Link} from 'react-router-dom';
 const index = () => {
 
 return (
-    <div>
-      <div className= "background" >
+    <div className="fullindex"> 
+      <div className="background-index">
           <div id="textBox">      
               <div id="titleIndex"><h1>Welcome to Galileo!</h1></div> <br/>
               <div id="introIndex">You want it?   We got it.</div><br/>

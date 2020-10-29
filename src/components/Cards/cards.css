@@ -1,8 +1,7 @@
 .generalcards{
   height: max-content;
-  margin-left: 20vh;
+  margin-left: 23vh;
   width: 1200px;
-  display: flex;
   margin-top: 20px;
 }
 .cardscontent {
@@ -35,4 +34,23 @@
 
 .filtros{
   padding-top: 40px;
+}
+
+#back2top{
+  display: flex;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  font-size: 20px;
+  scroll-behavior: smooth;
+  justify-content: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: auto;
+  }
 }

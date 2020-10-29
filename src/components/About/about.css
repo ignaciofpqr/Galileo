@@ -1,16 +1,16 @@
 .background {
-    background-image: url(https://i.ibb.co/tKGcSVs/NACHO-Mesa-de-trabajo-1.png);
+    background-image: url('../images/Portada-Transpar2.png');
     background-size: cover;
+    max-height: 90vh;
     background-position: center;
     height: 88vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     padding: 0;
 }
 
 #textBoxAbout {
+    padding-top: 5vh;
     padding-left: 10vh;
     font-family: "Roboto";
     font-size: 20px;
@@ -18,7 +18,7 @@
 }
 
 #titleAbout {
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
     font-size: 40px;
     font-family: 'Roboto';
 }

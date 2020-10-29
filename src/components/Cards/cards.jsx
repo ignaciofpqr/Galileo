@@ -1,33 +1,17 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import ProductCard from '../ProductCard/productcard';
-import {Pagination} from '@material-ui/lab';
-import Axios from 'axios';
 import "fontsource-roboto/500.css" // All styles included.
 import './cards.css';
 
-const Cards = ({search, setSearchApp}) => {
+const Cards = ({search}) => {
 
-    const [page,setPage] = useState(1)
-    const [count,setCount] = useState()
-
-    const handlePageChange = (event,value) => {
-        setPage(value)
-    }
-
-    useEffect (() => {
-
-        const fetchData = async () => {
-            const {data} = await Axios.get(`http://localhost:4000/api/search?query=${search.word}}`)
-            let counter = Math.ceil(data.length/20)
-            setCount(counter)
-        }
-        fetchData()
-    }, [search, page])
+    useEffect (() => { }, [search])
 
     if(search.filtered.length) {
         return (
             <div className="generalcards">
-                <section className="cardscontent">
+                <a href="back2top"></a>
+                <div className="cardscontent">
                      {search.filtered.map(c => 
                      <ProductCard
                       img={c.thumbnail}
@@ -37,19 +21,8 @@ const Cards = ({search, setSearchApp}) => {
                       condition={c.condition}
                       stock={c.available_quantity}
                      />)}
-                </section>
-                <div style= {{ display: "flex", justifyContent: "flex-end"}}>
-                     <Pagination
-                     className="my-3"
-                     count={count}
-                     page={page}
-                     siblingCount={1}
-                     boundaryCount={1}
-                     variant="outlined"
-                     shape="rounded"
-                     onChange={handlePageChange}
-                     />
                 </div>
+                <a id="back2top" href="#top">Go back to the top <span role="img">👆</span></a>
             </div>
         )
     } else {

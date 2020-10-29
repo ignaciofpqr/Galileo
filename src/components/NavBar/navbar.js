@@ -7,7 +7,7 @@ const Nav = () => {
 
 
     return (
-        <div id = "NAV">
+        <div id="top">
             <div id = "NavBarButtons">
                     <div className="LogoConteiner">
                      <Link to="/"> <input type="Image" src="https://i.ibb.co/T19W4xk/Mesa-de-trabajo-3-copia-2.png" height="55" width="55"/></Link>
@@ -37,11 +37,6 @@ const Nav = () => {
                             CONTACT
                         </Button>
                     </Link>
-                </div>
-                <div>
-                 {/* <Button id="indexOtrosButton" variant="contained" color="primary">
-                    PROFILE
-                 </Button> */}
                 </div>
             </div>
         </div>
