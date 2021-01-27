@@ -7,7 +7,7 @@ The API used is the public API of Mercado Libre (Complete API documentation [her
 Created with React and Node.js (Express)
 
 ## Try Galileo
-Clone the repository and then open two terminals: 
+Clone the repository and then open two terminals: <br>
 First terminal from the project directory:
 1. 'cd api' 
 2. 'npm start'
