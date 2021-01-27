@@ -39,8 +39,18 @@
 #back2top{
   display: flex;
   padding-top: 8vh;
-  padding-bottom: 8vh;
+  padding-bottom: 2vh;
   font-size: 20px;
+  scroll-behavior: smooth;
+  justify-content: center;
+}
+
+#LinkToRepo{
+  display: flex;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-size: 15px;
+  font-family: "Roboto";
   scroll-behavior: smooth;
   justify-content: center;
 }

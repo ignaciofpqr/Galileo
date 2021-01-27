@@ -10,7 +10,7 @@ const Nav = () => {
         <div id="top">
             <div id = "NavBarButtons">
                     <div className="LogoConteiner">
-                     <Link to="/"> <input type="Image" src="https://i.ibb.co/T19W4xk/Mesa-de-trabajo-3-copia-2.png" height="55" width="55"/></Link>
+                     <Link to="/"> <input type="Image" src="https://i.ibb.co/ByvfBhX/NACHO-03.png" height="55" width="55"/></Link>
                     </div>
                 <div>
                     <Link to='/'>

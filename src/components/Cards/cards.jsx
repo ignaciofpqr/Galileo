@@ -2,6 +2,9 @@ import React, {useEffect} from 'react';
 import ProductCard from '../ProductCard/productcard';
 import "fontsource-roboto/500.css" // All styles included.
 import './cards.css';
+import {Link} from 'react-router-dom';
+import {Button} from '@material-ui/core';
+
 
 const Cards = ({search}) => {
 
@@ -23,6 +26,9 @@ const Cards = ({search}) => {
                      />)}
                 </div>
                 <a id="back2top" href="#top">Go back to the top <span role="img">👆</span></a>
+                <a id="LinkToRepo" aria-haspopup="true" href="https://github.com/ignaciofpqr/Galileo" target="_blank">
+              - Link to repository - 
+                </a>
             </div>
         )
     } else {
