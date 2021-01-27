@@ -3,8 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Getting started
 
 Galileo in an APIrest App project created by Nacho Fernandez Peralta during his pass through Henry Bootcamp.
-The API used is the public API of Mercado Libre (Complete API documentation [here](https://api.mercadolibre.com/sites/MLA/search?q=iphone))
-Created with React and Node.js (Express)
+The API used is the public API of Mercado Libre (Complete API documentation [here](https://api.mercadolibre.com/sites/MLA/search?q=iphone)) <br>
+App developed with React and Node.js (Express)
 
 
 ## Try Galileo
