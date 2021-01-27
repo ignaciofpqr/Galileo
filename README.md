@@ -13,10 +13,12 @@ Clone the repository and then open two terminals: <br>
 First terminal from the project directory:
 1. 'cd api' 
 2. 'npm start' <br>
+
 This will start Node.js server
 
 
 Second terminal in the project directory:
 1. 'npm start' <br>
+
 This will open your browser with Galileo.
 
