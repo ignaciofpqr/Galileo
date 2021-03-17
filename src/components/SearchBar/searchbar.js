@@ -30,7 +30,7 @@ const SearchBar = ({setSearchApp, search}) => {
     
     
     return (
-        <div>
+        <>
             <div class="buscar-caja">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
                 <input class="buscar-txt" value = {search.word} type="text" name="" placeholder="Search for anything..." onChange = { (e) => handleChange (e) } />
@@ -38,7 +38,7 @@ const SearchBar = ({setSearchApp, search}) => {
                 <i class="far fa search"></i>
                 </a>
             </div>
-        </div>
+        </> 
     )
     
 }

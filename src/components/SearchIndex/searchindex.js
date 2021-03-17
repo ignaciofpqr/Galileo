@@ -14,13 +14,11 @@ return (
     <div>
       <head> <script defer src = "https://use.fontawesome.com/releases/v5.0.6/js/all.js"/></head>
       <div className= "backgroundsearchindex" >
-      <div id="titleindexsearchcontent"> 
-            <div id="titleindexsearch"><h2>What are you looking for?</h2></div> <br/>
-              <div>
-                  <SearchBar setSearchApp={setSearchApp} search={search}
-                  />
-              </div>
-            </div>
+        <div id="titleindexsearchcontent"> 
+            <span id="whatAreYouLooking">What are you looking for?</span><br/>
+            <SearchBar setSearchApp={setSearchApp} search={search}
+            />
+        </div>
       </div>    
     </div>
     )
