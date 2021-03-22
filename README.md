@@ -18,7 +18,8 @@ This will start Node.js server
 
 
 Second terminal in the project directory:
-1. 'npm start' <br>
+1. 'npm install' to install dependencies. <br>
+2. 'npm start' <br>
 
 This will open your browser with Galileo.
 
